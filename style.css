@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%); 
+    --GrayishBlue: hsl(246, 25%, 77%);
+    --fontSize: 16px;
+    --fontFamily: font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url(./images/bg-intro-desktop.png);
+    background-size: cover;
+    background-color: var(--Red);
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+    
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    padding: 150px;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;  
+}
+#chi{
+    flex: 1;
+}
+.first-container h1{
+    color: white;
+    font-family: var(--fontFamily);
+    text-align: start;
+    font-size: 45px;
+}
+.first-container p{
+    color: white;
+    font-family: var(--fontFamily);
+    font-size: 20px;
+    text-align: start;
+}
+.second-container button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Blue);
+    margin-bottom: 20px;
+    color: white;
+    font-size: var(--fontSize);
+    font-family: var(--fontFamily);
+    font-weight: 700;
+    cursor: pointer;
+}
+.second-container button:hover{
+    background-color: var(--DarkBlue);
+}
+.second-container .inputs{
+    background-color: white;
+    padding: 30px;
+    box-shadow: 5 5 5 0.5px black;
+    border-radius: 10px;
+}
+input{
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: var(--fontSize);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border-color: gray;
+}
+input:focus{
+    background-color: gainsboro;
+}
+.inputs button{
+    width: 100%;
+    padding: 15px;
+    font-size: var(--fontSize);
+    color: white;
+    background-color: var(--Green);
+    border: none;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.inputs button:hover{
+    background-color: green;
+}
+.second-container p{
+    text-align: center;
+    color: black;
+}
+.second-container p span{
+    color: var(--Blue);
+}
+@media screen and (max-width: 767px) {
+    body{
+        background-image: url(./images/bg-intro-mobile.png);
+        background-color: var(--Red);
+
+    }
+    #container{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+     
+}
